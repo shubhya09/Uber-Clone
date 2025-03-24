@@ -3,6 +3,7 @@ import dotenv from 'dotenv'
 dotenv.config({
     path:'./.env'
 })
+console.log("GOMAPS_API_KEY: ", process.env.GOMAPS_API_KEY);
 // import http from 'http'
 import {app} from './app.js'
 import { connectDb } from './src/db/connectDB.js'
